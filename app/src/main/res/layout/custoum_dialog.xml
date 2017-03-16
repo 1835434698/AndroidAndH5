@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="400px"
+    android:layout_marginRight="60px"
+    android:layout_marginLeft="60px"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:paddingTop="10px"
+        android:layout_gravity="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/textSize"
+        android:text="@string/dialog_text1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/textSize"
+            android:text="@string/dialog_text2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/title_background"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="13512345678" />
+    </LinearLayout>
+    <View
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30px"
+        android:layout_marginBottom="30px"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/bt_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginLeft="190px"
+        android:layout_marginRight="190px"
+        android:layout_marginBottom="20px"
+        android:textSize="@dimen/textSize_L"
+        android:padding="15px"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:text="@string/make_sure" />
+
+
+</LinearLayout>

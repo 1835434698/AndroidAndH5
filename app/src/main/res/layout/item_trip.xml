@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20px"
+    android:paddingBottom="20px"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_type"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ico_inside_city"/>
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="20px"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize"
+            android:text="市内"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="18"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_S"
+                android:text="行程标号："/>
+
+            <TextView
+                android:id="@+id/tv_id"
+                style="@style/notification_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_S"
+                android:text="A201603160910"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10px"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:drawableLeft="@drawable/ico_time"
+                android:drawablePadding="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_S"
+                android:text="起始时间："/>
+            <TextView
+                android:id="@+id/tv_startTime"
+                style="@style/notification_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_S"
+                android:text="2016-3-17周四10:40"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10px"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:drawableLeft="@drawable/ico_flight"
+                android:drawablePadding="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_S"
+                android:text="航班号/车次："/>
+            <TextView
+                android:id="@+id/tv_flight"
+                style="@style/notification_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_S"
+                android:text="CL4"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10px"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:drawableLeft="@drawable/ico_location_start"
+                android:layout_width="wrap_content"
+                android:drawablePadding="10px"
+                android:textSize="@dimen/textSize_S"
+                android:layout_height="wrap_content"
+                android:text="约定地点："/>
+            <TextView
+                android:id="@+id/tv_startLocation"
+                style="@style/notification_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_S"
+                android:text="逸林希尔顿酒店"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10px"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:drawableLeft="@drawable/ico_location"
+                android:drawablePadding="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_S"
+                android:text="目的地："/>
+            <TextView
+                android:id="@+id/tv_endLocation"
+                style="@style/notification_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_S"
+                android:text="北京南站"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10px"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:drawableLeft="@drawable/ico_passenger"
+                android:drawablePadding="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_S"
+                android:text="乘客姓名："/>
+            <TextView
+                android:id="@+id/tv_passenger"
+                style="@style/notification_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_S"
+                android:drawableRight="@drawable/ico_phone"
+                android:drawablePadding="10px"
+                android:text="徐小姐"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_detail"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ico_more">
+
+    </ImageView>
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bottom_background"
+    android:paddingTop="5dp"
+    android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/bottom_notice"
+            style="@style/bottom_text_style"
+            android:drawableTop="@drawable/ico_bottom_notice"
+            android:textColor="@color/title_text_color"
+            android:text="@string/firstPage"/>
+        <TextView
+            android:id="@+id/bottom_notice_un"
+            android:visibility="gone"
+            style="@style/bottom_text_style"
+            android:drawableTop="@drawable/ico_bottom_notice_un"
+            android:textColor="@color/text_color_un"
+            android:text="@string/firstPage"/>
+
+        <TextView
+            android:id="@+id/bottom_trip"
+            android:visibility="gone"
+            style="@style/bottom_text_style"
+            android:drawableTop="@drawable/ico_bottom_trip"
+            android:textColor="@color/title_text_color"
+            android:text="@string/twoPage" />
+        <TextView
+            android:id="@+id/bottom_trip_un"
+            style="@style/bottom_text_style"
+            android:drawableTop="@drawable/ico_bottom_trip_un"
+            android:textColor="@color/text_color_un"
+            android:text="@string/twoPage" />
+        <TextView
+            android:id="@+id/bottom_center"
+            android:visibility="gone"
+            style="@style/bottom_text_style"
+            android:drawableTop="@drawable/ico_bottom_center"
+            android:textColor="@color/title_text_color"
+            android:text="@string/threePage" />
+        <TextView
+            android:id="@+id/bottom_center_un"
+            style="@style/bottom_text_style"
+            android:drawableTop="@drawable/ico_bottom_center_un"
+            android:textColor="@color/text_color_un"
+            android:text="@string/threePage" />
+
+</LinearLayout>

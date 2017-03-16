@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <LinearLayout android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:text="这是第一个页面"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+
+</ScrollView>

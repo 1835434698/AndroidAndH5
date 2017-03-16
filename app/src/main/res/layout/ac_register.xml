@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp">
+
+    <EditText
+        android:id="@+id/et_register_id"
+        android:layout_marginTop="10dp"
+        style="@style/login_editext_style"
+        android:inputType="phone"
+        android:drawableLeft="@drawable/ico_account"
+        android:hint="@string/register_account"
+        />
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et_register_code"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+            android:textSize="@dimen/textSize_S"
+            android:layout_width="0dp"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ico_key"
+            android:background="@null"
+            android:hint="@string/register_code"
+            />
+        <TextView
+            android:id="@+id/tv_send_code"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/textSize_S"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:text="@string/register_send_code"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_register_password"
+        android:layout_marginTop="25dp"
+        style="@style/login_editext_style"
+        android:drawableLeft="@drawable/ico_lock"
+        android:inputType="textPassword"
+        android:hint="@string/register_password"
+        />
+    <EditText
+        android:id="@+id/et_register_con_ps"
+        android:layout_marginTop="25dp"
+        style="@style/login_editext_style"
+        android:drawableLeft="@drawable/ico_lock"
+        android:inputType="textPassword"
+        android:hint="@string/register_conf_pw"
+        />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        style="@style/login_button_style"
+        android:text="@string/register"/>
+
+
+</LinearLayout>

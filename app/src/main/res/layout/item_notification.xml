@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingRight="20px"
+    android:paddingTop="30px"
+    android:paddingBottom="10px"
+    android:layout_marginBottom="20px"
+    android:background="@color/listView_background"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_endLocation"
+            style="@style/notification_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_S"
+            android:text="北京南站"/>
+
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:id="@+id/tv_sure"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认"
+            android:padding="10dp"
+            style="@style/login_button_style"/>
+
+
+</LinearLayout>

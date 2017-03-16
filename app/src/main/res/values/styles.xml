@@ -1,0 +1,130 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+    <style name="AppThemeTwo" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="bottom_text_style">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSize</item>
+    </style>
+
+    <style name="text_style_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15px</item>
+    </style>
+    <style name="login_editext_style" parent="@style/text_style_parent">
+        <item name="android:background">@drawable/edittext_background</item>
+        <item name="android:textSize">@dimen/textSize_S</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="login_button_style" parent="@style/text_style_parent">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:padding">10dp</item>
+
+    </style>
+    <style name="notification_text_style">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--Theme.AppCompat.Light.NoActionBar-->
+    <style name="driver_customDialog" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent_background</item>
+    </style>
+
+    <style name="driver_customDialog_two" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="trip_detail_padding">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style><style name="trip_detail_padding_one" parent="trip_detail_padding">
+    <item name="android:orientation">horizontal</item>
+    <item name="android:layout_marginLeft">100px</item>
+</style>
+    <style name="trip_detail_padding_two" parent="trip_detail_padding">
+        <item name="android:paddingBottom">15px</item>
+        <item name="android:paddingTop">15px</item>
+    </style>
+
+
+    <style name="trip_detail_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">10px</item>
+        <item name="android:paddingTop">10px</item>
+        <item name="android:textSize">@dimen/textSize</item>
+    </style>
+
+
+    <style name="trip_detail_text_one" parent="trip_detail_text">
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">5px</item>
+    </style>
+
+    <style name="trip_detail_text_two" parent="trip_detail_text">
+        <item name="android:gravity">end</item>
+    </style>
+
+    <style name="trip_detail_text_three" parent="trip_detail_text">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:paddingLeft">15px</item>
+    </style>
+
+    <style name="trip_detail_text_four" parent="trip_detail_text">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">30px</item>
+        <item name="android:drawableRight">@drawable/ico_more</item>
+        <item name="android:drawablePadding">5px</item>
+    </style>
+
+    <style name="personal_center_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginLeft">15px</item>
+        <item name="android:layout_marginRight">15px</item>
+        <item name="android:background">@color/personal_background</item>
+
+    </style>
+
+
+
+</resources>

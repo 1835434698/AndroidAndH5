@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.cn.conciseframe"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/maven/com.squareup.okhttp3/okhttp/pom.xml'
+        exclude 'META-INF/maven/com.squareup.okhttp3/okhttp/pom.properties'
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.xml'
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.properties'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/commons-lang3-3.1.jar')
+    compile project(path: ':filelibrary')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+//    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha1'
+}
