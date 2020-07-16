@@ -6,10 +6,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.Handler;
-import android.support.v4.app.ActivityCompat;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -21,6 +18,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.core.content.ContextCompat;
 
 import com.cn.conciseframe.Constant;
 import com.cn.conciseframe.R;
@@ -44,14 +43,10 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
-import cn.com.okhttp.filelibrary.helper.ProgressHelper;
 import cn.com.okhttp.filelibrary.listener.impl.UIProgressListener;
 import okhttp3.Call;
 import okhttp3.Callback;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
 import okhttp3.Response;
 
 
@@ -94,7 +89,7 @@ public class TwoPageAc extends BaseView implements View.OnClickListener{
         cd = new CustomDialogTwo(context, R.style.driver_customDialog_two, "张先生", "18501942558", new CustomDialogTwo.OKTwoListener() {
             @Override
             public void onEnsure() {
-                if (ActivityCompat.checkSelfPermission(context, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                if (ContextCompat.checkSelfPermission(context, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                     // TODO: Consider calling
                     return;
                 }else {
@@ -215,7 +210,7 @@ public class TwoPageAc extends BaseView implements View.OnClickListener{
             gridView_item.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    File file = new File(path+json.optString("name"));
+                    File file = new File(path+json.optString("name")+".zip");
                     if (!file.exists())
                         downLoad(json);
                     else {
@@ -281,9 +276,8 @@ public class TwoPageAc extends BaseView implements View.OnClickListener{
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 Logger.d(TAG, "onResp");
-                String path = Constant.path+"/";
                 try {
-                    FileUtils.writeToFile(response.body().bytes(),path+json.optString("name")+".zip");
+                    FileUtils.writeToFile(response.body().bytes(),Constant.path,json.optString("name")+".zip");
                     UtilZip.UnZipFolder(path+json.optString("name")+".zip", path);
                 }catch (Exception e){
                     e.printStackTrace();

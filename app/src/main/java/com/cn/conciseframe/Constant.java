@@ -6,7 +6,8 @@ import android.os.Environment;
 public class Constant {
 	
 	public static Context context;
-	public static final String url = "http://192.168.191.1:8080/MySpringWeb/mvc/";
+	public static final String url = "http://10.0.4.4:8080/MySpringWeb/mvc/";
+//	public static final String url = "http://192.168.191.1:8080/MySpringWeb/mvc/";
 //	public static final String url = "http://192.168.191.1:8081/MyPHPWeb/mobile/";
 	public static int widthScreen;
 	public static int heightScreen;

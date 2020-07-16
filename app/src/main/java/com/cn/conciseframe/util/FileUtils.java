@@ -27,9 +27,15 @@ public class FileUtils {
      * @throws IOException
      */
     @SuppressWarnings("resource")
-    public static void writeToFile(byte[] by, String path) throws IOException {
+    public static void writeToFile(byte[] by, String path, String file) throws IOException {
 
-        File f = new File(path);
+        File dir = new File(path);
+
+        if (!dir.exists()) {// 判断目录是否存在
+            dir.mkdir();
+        }
+
+        File f = new File(path+"/"+file);
         if (f.exists()) {
             f.delete();
             f.createNewFile();
