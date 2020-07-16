@@ -179,7 +179,7 @@ public class LoginAc extends BaseView implements View.OnClickListener {
             stopProgressDialog();
             Logger.d(TAG, "onErr = "+respons);
             Toasts.showToast("网络地址错误", Toast.LENGTH_SHORT);
-            MiddleView.getInstance().startCleanActivity(FirstPageAc.class, null);
+//            MiddleView.getInstance().startCleanActivity(FirstPageAc.class, null);
 
         }
     };

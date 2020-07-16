@@ -222,15 +222,19 @@ public class TwoPageAc extends BaseView implements View.OnClickListener{
                                 e.printStackTrace();
                             }
                         }else {
-                            Intent intent = new Intent(context, WebActivity.class);
-                            intent.putExtra("path",json.optString("name"));
-                            context.startActivity(intent);
+                            StartView(json);
                         }
                     }
                 }
             });
             return view;
         }
+    }
+
+    private void StartView(JSONObject json) {
+        Intent intent = new Intent(context, WebActivity.class);
+        intent.putExtra("path",json.optString("name"));
+        context.startActivity(intent);
     }
 
     private void downLoad(final JSONObject json) {
@@ -279,6 +283,7 @@ public class TwoPageAc extends BaseView implements View.OnClickListener{
                 try {
                     FileUtils.writeToFile(response.body().bytes(),Constant.path,json.optString("name")+".zip");
                     UtilZip.UnZipFolder(path+json.optString("name")+".zip", path);
+                    StartView(json);
                 }catch (Exception e){
                     e.printStackTrace();
                 }
